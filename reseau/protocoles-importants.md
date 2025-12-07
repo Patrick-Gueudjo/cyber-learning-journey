@@ -94,3 +94,8 @@ Quelques ports essentiels :
 - Le rôle de chaque protocole dans la communication réseau.
 - Les ports logiques associés aux applications.
 - L’importance des protocoles pour le diagnostic réseau.
+- Chaque protocole a un rôle précis
+- TCP = fiable, UDP = rapide
+- ARP, ICMP, DHCP sont essentiels pour diagnostiquer un réseau
+- Comprendre ces protocoles = base solide pour la cybersécurité et l’administration réseau
+
