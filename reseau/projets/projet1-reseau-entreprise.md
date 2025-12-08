@@ -3,13 +3,13 @@
 
 Mettre en place un réseau simple composé de :
 
-1 LAN Utilisateurs
+*1 LAN Utilisateurs
 
-1 LAN Serveurs
+*1 LAN Serveurs
 
-1 LAN Administration
+*1 LAN Administration
 
-1 routeur avec 3 interfaces
+*1 routeur avec 3 interfaces
 
 Routage statique entre les réseaux
 
@@ -25,7 +25,10 @@ Routage statique entre les réseaux
    │                  │
 Client LAN        Serveur LAN
 
+
+
 📡 Plan d’adressage
+
 Réseau	Adresse	Masque	Passerelle
 Admin LAN	192.168.63.0	/24	192.168.63.254
 Client LAN	192.168.191.0	/24	192.168.191.254
