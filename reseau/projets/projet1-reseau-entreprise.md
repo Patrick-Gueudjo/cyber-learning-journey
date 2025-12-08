@@ -14,6 +14,7 @@ Mettre en place un réseau simple composé de :
 Routage statique entre les réseaux
 
 🧱 Architecture
+
         Admin LAN
             │
         +---┴---+
