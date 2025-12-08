@@ -9,11 +9,11 @@ Concevoir un réseau simple composé de :
 - Du routage statique
 
 ## 🧱 Plan d’adressage
-| LAN | Réseau | Passerelle |
-|-----|--------|------------|
+| LAN          | Réseau           | Passerelle      |
+|--------------|------------------|-----------------|
 | Utilisateurs | 192.168.128.0/18 | 192.168.191.254 |
-| Serveurs | 192.168.64.0/18 | 192.168.127.254 |
-| Admin | 192.168.0.0/18 | 192.168.63.254 |
+| Serveurs     | 192.168.64.0/18  | 192.168.127.254 |
+| Admin        | 192.168.0.0/18   | 192.168.63.254  |
 
 ## 🔧 Configuration Router
 *(Tu pourras coller ta configuration ici)*
