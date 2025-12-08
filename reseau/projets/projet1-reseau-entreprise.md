@@ -23,7 +23,10 @@ Routage statique entre les réseaux
             │
    ┌────────┴─────────┐
    │                  │
-Client LAN        Serveur LAN
+Client LAN        Serveur 
+
+
+
 
 
 
