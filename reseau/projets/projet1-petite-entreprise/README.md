@@ -17,20 +17,30 @@ Concevoir un réseau simple composé de :
 
 ## 🔧 Configuration Router
 interface g0/0  
+
    ip address 192.168.63.254 255.255.255.0
+   
    no shutdown	  
 
 interface g0/1
+
 ip address 192.168.191.254 255.255.255.0  
+
  no shutdown
 
 interface g0/2
+
  ip address 192.168.127.254 255.255.255.0
+ 
  no shutdown
+ 
 
 ip route 192.168.63.0 255.255.255.0 g0/0
+
 ip route 192.168.191.0 255.255.255.0 g0/1
+
 ip route 192.168.127.0 255.255.255.0 g0/2
+
 
 
 ## 🧪 Tests
