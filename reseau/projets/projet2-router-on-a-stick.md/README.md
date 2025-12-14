@@ -22,7 +22,9 @@ PCs → Switch → (Trunk) → Routeur g0/0
 | 30 Serveurs     | 192.168.30.0/24 | 192.168.30.1 |
 
 
+
 🔧 Routeur — Configuration des sous-interfaces
+
 
 interface g0/0
 
@@ -52,6 +54,7 @@ interface g0/0.30
 
 
  🔧 Switch — Configuration VLAN + Trunk
+ 
 
  vlan 10
  
