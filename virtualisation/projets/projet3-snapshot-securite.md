@@ -1,6 +1,9 @@
 📌Projet 3 : Snapshot + Test de sécurité
+
 1. Objectif du projet
+
 Dans ce troisième projet, nous allons tester l’utilisation d’un snapshot en créant volontairement une situation “à risque” dans une machine virtuelle.
+
 L’objectif est de :
 
 créer un snapshot de la VM dans son état initial
