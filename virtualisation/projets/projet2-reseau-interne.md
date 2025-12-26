@@ -56,9 +56,9 @@ Redémarrer la VM une fois l’installation terminée.
 Les deux VM (Ubuntu et Debian) doivent être configurées sur le même réseau Host‑Only.
 
 Exemple d’adresses IP :
-VM1 (Ubuntu) : 192.168.56.10
+VM1 (Ubuntu) : 192.168.100.2
 
-VM2 (Debian) : 192.168.56.11
+VM2 (Debian) : 192.168.100.3
 
 Masque : 255.255.255.0
 
@@ -69,10 +69,10 @@ Une fois les deux VM configurées sur le même réseau interne, nous effectuons 
 
 Depuis VM1 vers VM2 :
 Code
-ping 192.168.56.11
+ping 192.168.100.2
 Depuis VM2 vers VM1 :
 Code
-ping 192.168.56.10
+ping 192.168.100.3
 Si les deux machines répondent, cela confirme que le réseau interne est fonctionnel.
 
 7. Résultat attendu
