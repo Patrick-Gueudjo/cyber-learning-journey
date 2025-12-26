@@ -10,13 +10,18 @@
 - qemu-img convert -O vdi source.qcow2 destination.vdi
 
 -Action	                   →       Commande
--Voir interfaces	        →          ip link
--Voir IP	                →           ip addr
--Activer interface	     →    ip link set enp0s8 up
--Ajouter IP	       → ip addr add 192.168.100.10/24 dev enp0s8
--DHCP	                    →    dhclient enp0s8
--Ping                       →	ping 192.168.100.20
 
+-Voir interfaces	        →          ip link
+
+-Voir IP	                →           ip addr
+
+-Activer interface	     →    ip link set enp0s8 up
+
+-Ajouter IP	       → ip addr add 192.168.100.10/24 dev enp0s8
+
+-DHCP	                    →    dhclient enp0s8
+
+-Ping                       →	ping 192.168.100.20
 
 
 ## VirtualBox
