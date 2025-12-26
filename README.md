@@ -29,6 +29,7 @@ Ce dépôt retrace mon évolution jour après jour.
 - `python/` → scripts Python (calculatrice, générateur de mot de passe, analyseur de logs…)
 - `linux/` → commandes essentielles et mini-labs
 - `reseau/` → protocoles et schémas réseau
+- `virtualisation/` → virtualisez votre espace de travail
 - `logs/` → fichiers journaux + analyse
 - `coursera/` → travaux Google Cybersecurity (à venir)
 - `projets/` → projets plus avancés (SOC, MITRE, SIEM, Splunk…)
