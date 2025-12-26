@@ -75,6 +75,11 @@ Code
 ping 192.168.100.3
 Si les deux machines répondent, cela confirme que le réseau interne est fonctionnel.
 
+Ici on a utilises les commandes:
+
+-ip link set enp0s3 up (pour activer adaptateur enp0s3)
+-ip addr add 192.168.100.2/24 dev ep0s3 (pour lui donner une adresse ip manuellement )
+
 7. Résultat attendu
 À la fin de ce projet, les deux machines virtuelles doivent :
 
