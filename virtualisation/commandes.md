@@ -7,6 +7,7 @@
 - `sudo systemctl status`
 - `df -h` → vérifier le stockage
 - `free -m` → vérifier la RAM
+- Sudo su (pour passer en mode administrateur sur Debian)
 - qemu-img convert -O vdi source.qcow2 destination.vdi(convertir une image au format.qcow2 en vdi)
 
 -Action	                   →       Commande
