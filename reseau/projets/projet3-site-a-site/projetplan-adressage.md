@@ -26,8 +26,8 @@ Site A (LAN A)  ── RouterA ── Lien WAN ── RouterB ──  Site B (LA
 | Rôle          | Réseau           | Masque           |
 |---------------|------------------|------------------|
 | LAN Site A    | 192.168.10.0     | 255.255.255.0 (/24) |
-| LAN Site B    | 192.168.20.0     | 255.255.255.0 (/24) |
-| Lien WAN      | 10.0.0.0         | 255.255.255.252 (/30) |
+| LAN Site B    | 192.168.30.0     | 255.255.255.0 (/24) |
+| Lien WAN      | 10.10.10.0         | 255.255.255.252 (/30) |
 
 ---
 
@@ -36,7 +36,7 @@ Site A (LAN A)  ── RouterA ── Lien WAN ── RouterB ──  Site B (LA
 #### 🏢 Site A
 
 - **PC-A**
-  - IP : 192.168.10.10  
+  - IP : 192.168.10.2 
   - Masque : 255.255.255.0  
   - Passerelle (gateway) : 192.168.10.1  
 
@@ -45,7 +45,7 @@ Site A (LAN A)  ── RouterA ── Lien WAN ── RouterB ──  Site B (LA
     - IP : 192.168.10.1  
     - Masque : 255.255.255.0  
   - Interface WAN : `Serial0/0/0`  
-    - IP : 10.0.0.1  
+    - IP : 10.10.10.1  
     - Masque : 255.255.255.252  
 
 ---
@@ -53,16 +53,16 @@ Site A (LAN A)  ── RouterA ── Lien WAN ── RouterB ──  Site B (LA
 #### 🏢 Site B
 
 - **PC-B**
-  - IP : 192.168.20.10  
+  - IP : 192.168.30.2
   - Masque : 255.255.255.0  
-  - Passerelle : 192.168.20.1  
+  - Passerelle : 192.168.30.1  
 
 - **RouterB**
   - Interface LAN : `GigabitEthernet0/0`  
-    - IP : 192.168.20.1  
+    - IP : 192.168.30.1  
     - Masque : 255.255.255.0  
   - Interface WAN : `Serial0/0/0`  
-    - IP : 10.0.0.2  
+    - IP : 10.10.10.2  
     - Masque : 255.255.255.252  
 
 ---
@@ -72,9 +72,9 @@ Site A (LAN A)  ── RouterA ── Lien WAN ── RouterB ──  Site B (LA
 Sur **RouterA** :
 
 - Route vers LAN B :  
-  - Réseau : `192.168.20.0`  
+  - Réseau : `192.168.30.0`  
   - Masque : `255.255.255.0`  
-  - Next-hop : `10.0.0.2`  
+  - Next-hop : `10.10.10.2`  
 
 Sur **RouterB** :
 
@@ -89,10 +89,10 @@ Sur **RouterB** :
 
 - PC-A doit pouvoir **ping** :
   - 192.168.10.1 (gateway locale)
-  - 10.0.0.1 (WAN côté RouterA)
-  - 10.0.0.2 (WAN côté RouterB)
-  - 192.168.20.1 (gateway du Site B)
-  - 192.168.20.10 (PC-B)
+  - 10.10.10.1 (WAN côté RouterA)
+  - 10.10.10.2 (WAN côté RouterB)
+  - 192.168.30.1 (gateway du Site B)
+  - 192.168.30.2 (PC-B)
 
 - PC-B doit pouvoir **ping** l’inverse.
 
