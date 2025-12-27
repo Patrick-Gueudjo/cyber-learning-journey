@@ -23,7 +23,7 @@ interface Serial0/0/0
  no shutdown
 
 ! Routage statique vers le LAN du Site A
-ip route 192.168.10.0 255.255.255.0 10.0.0.1
+ip route 192.168.10.0 255.255.255.0 10.10.10.1
 
 end
 write memory
