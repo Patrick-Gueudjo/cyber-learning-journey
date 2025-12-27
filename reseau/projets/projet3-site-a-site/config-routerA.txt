@@ -1,0 +1,30 @@
+! ========================
+! PROJET 3 – RouterA
+! Site A – Réseau 192.168.10.0/24
+! Lien WAN vers RouterB – 10.0.0.0/30
+! ========================
+
+enable
+configure terminal
+
+! Nom du routeur (facultatif)
+hostname RouterA
+
+! Interface LAN – vers PC-A / Switch
+interface GigabitEthernet0/0
+ description LAN Site A
+ ip address 192.168.10.1 255.255.255.0
+ no shutdown
+
+! Interface WAN – vers RouterB
+interface Serial0/0/0
+ description Lien WAN vers RouterB
+ ip address 10.0.0.1 255.255.255.252
+ clock rate 64000
+ no shutdown
+
+! Routage statique vers le LAN du Site B
+ip route 192.168.20.0 255.255.255.0 10.0.0.2
+
+end
+write memory
