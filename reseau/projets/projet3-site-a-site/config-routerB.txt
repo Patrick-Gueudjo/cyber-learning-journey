@@ -1,7 +1,7 @@
 ! ========================
 ! PROJET 3 – RouterB
-! Site B – Réseau 192.168.20.0/24
-! Lien WAN vers RouterA – 10.0.0.0/30
+! Site B – Réseau 192.168.30.0/24
+! Lien WAN vers RouterA – 10.10.10.0/30
 ! ========================
 
 enable
@@ -13,13 +13,13 @@ hostname RouterB
 ! Interface LAN – vers PC-B / Switch
 interface GigabitEthernet0/0
  description LAN Site B
- ip address 192.168.20.1 255.255.255.0
+ ip address 192.168.30.1 255.255.255.0
  no shutdown
 
 ! Interface WAN – vers RouterA
 interface Serial0/0/0
  description Lien WAN vers RouterA
- ip address 10.0.0.2 255.255.255.252
+ ip address 10.10.10.2 255.255.255.252
  no shutdown
 
 ! Routage statique vers le LAN du Site A
